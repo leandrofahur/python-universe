@@ -134,6 +134,19 @@ print("\nDictionaries:")
 print({"name": "John", "age": 20})
 print(type({"name": "John", "age": 20}))
 
+dictionary = {
+    "a": 1,
+    "b": 2,
+    "c": 3,
+    "d": [1, 2, 3],
+}
+print(dictionary)
+print(dictionary["a"]) # 1
+print(dictionary["b"]) # 2
+print(dictionary["c"]) # 3
+print(dictionary["d"]) # [1, 2, 3]
+print(dictionary["d"][1]) # 2
+
 # Variables rules:
 # 1. snake_case
 # 2. Start with lowercase or underscore
