@@ -1,4 +1,5 @@
 # Fundamental data types:
+
 # Integers:
 print("Integers:")
 print(type(2 + 4))
@@ -75,6 +76,35 @@ a = "Hello"
 b = "World"
 print(f"{a} {b}") # Hello World
 
+# Boolean:
+print("\nBoolean:")
+print(True)
+print(False)
+
+# None:
+print("\nNone:")
+print(None)
+print(type(None))
+
+# Lists:
+print("\nLists:")
+print([1, 2, 3])
+print(type([1, 2, 3]))
+
+# Tuples:
+print("\nTuples:")
+print((1, 2, 3))
+print(type((1, 2, 3)))
+
+# Sets:
+print("\nSets:")
+print({1, 2, 3})
+print(type({1, 2, 3}))
+
+# Dictionaries:
+print("\nDictionaries:")
+print({"name": "John", "age": 20})
+print(type({"name": "John", "age": 20}))
 
 # Variables rules:
 # 1. snake_case
@@ -91,13 +121,3 @@ print(f"{a} {b}") # Hello World
 # 12. Constants are static
 # 13. Variables are local
 # 14. Constants are global
-
-# Boolean:
-print("\nBoolean:")
-print(True)
-print(False)
-
-# None:
-print("\nNone:")
-print(None)
-print(type(None))
