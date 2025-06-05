@@ -42,7 +42,6 @@ print(oct(10)) # 0o12
 print("\nCaveat: Bin to int:")
 print(int("0b101", 2)) # 5
 
-
 #  Complex numbers:
 print("\nComplex numbers:")
 print(5j) # 5j
@@ -62,5 +61,5 @@ print(type("""Hello"""))
 # 3. Can only contain letters, numbers, and underscores
 # 4. Case sensitive
 # 5. Don't overwrite keywords
-
-
+# 6. Don't overwrite built-in functions (dunder)
+# 7. Constants are in uppercase
