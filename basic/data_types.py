@@ -162,3 +162,39 @@ print(dictionary["d"][1]) # 2
 # 12. Constants are static
 # 13. Variables are local
 # 14. Constants are global
+
+# GUI:
+picture = [
+    [0,0,0,1,0,0,0],
+    [0,0,1,1,1,0,0],
+    [0,1,1,1,1,1,0],
+    [1,1,1,1,1,1,1],
+    [0,0,0,1,0,0,0],
+    [0,0,0,1,0,0,0],
+]
+
+print("Picture before:")
+for row in picture:    
+    print(row)
+
+print("\n\nPicture after:")
+for row in range(len(picture)):
+    for index in range(len(picture[row])):
+        # print(f'Picture[{row}][{index}]:', picture[row][index])
+        if picture[row][index] == 0:
+            picture[row][index] = ' '
+        else:
+            picture[row][index] = '*'
+
+for row in picture:
+    print(row)
+
+print("\n\nFormated picture:")
+for row in picture:
+    filtered_row = ''
+    for index in row:
+        if index == ' ':
+            filtered_row += ' '
+        else:
+            filtered_row += '*'
+    print(filtered_row)
