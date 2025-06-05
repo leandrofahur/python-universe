@@ -90,6 +90,13 @@ print(type(None))
 print("\nLists:")
 print([1, 2, 3])
 print(type([1, 2, 3]))
+print([1, 2, 3][0]) # 1
+print([1, 2, 3][0:2]) # [1, 2]
+print([1, 2, 3][::-1]) # [3, 2, 1]
+print([1, 2, 3][::2]) # [1, 3]
+print([1, 2, 3][::3]) # [1]
+print([1, 2, 3][::4]) # [1]
+print([1, 2, 3][::5]) # [1]
 
 # Tuples:
 print("\nTuples:")
