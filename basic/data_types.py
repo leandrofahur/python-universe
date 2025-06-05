@@ -56,6 +56,7 @@ print('Hello')
 print("""Hello""")
 print('Hello'[0]) # H
 print('Hello'[0:3]) # Hel
+# [start:stop:step]
 print('Hello'[::-1]) # olleH
 print('Hello'[::2]) # Hlo
 print('Hello'[::3]) # Hl
