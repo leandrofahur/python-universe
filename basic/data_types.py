@@ -98,6 +98,16 @@ print([1, 2, 3][::3]) # [1]
 print([1, 2, 3][::4]) # [1]
 print([1, 2, 3][::5]) # [1]
 
+print([1, 2, 3] + [4, 5, 6]) # [1, 2, 3, 4, 5, 6]
+print([1,'a',{'id':10, 'name':'John'}]) # [1, 'a', {'id': 10, 'name': 'John'}]
+
+# List methods:
+print("\nList methods:")
+print([1, 2, 3].append(4)) # [1, 2, 3, 4]
+print([1, 2, 3].pop()) # 3
+print([1, 2, 3].remove(2)) # [1, 3]
+print([1, 2, 3].reverse()) # [3, 2, 1]
+
 # Tuples:
 print("\nTuples:")
 print((1, 2, 3))
