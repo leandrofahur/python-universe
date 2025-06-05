@@ -51,9 +51,29 @@ print(complex(5, 2)) # 5+2j
 
 # Strings:
 print("\nStrings:")
-print(type("Hello"))
-print(type('Hello'))
-print(type("""Hello"""))
+print("Hello")
+print('Hello')
+print("""Hello""")
+print('Hello'[0]) # H
+print('Hello'[0:3]) # Hel
+print('Hello'[::-1]) # olleH
+print('Hello'[::2]) # Hlo
+print('Hello'[::3]) # Hl
+print('Hello'[::4]) # Hl
+print('Hello'[::5]) # Hl
+
+# Formatting strings:
+print("\nFormatting strings:")
+print("Hello {}".format("World")) # Hello World
+print("Hello {0} {1}".format("World", "Python")) # Hello World Python
+print("Hello {name} {age}".format(name="World", age=20)) # Hello World 20
+print("Hello {0:.2f}".format(3.14159)) # Hello 3.14
+print(f"Hello {20}") # Hello 20
+print(f"Hello {20:.2f}") # Hello 20.00
+a = "Hello"
+b = "World"
+print(f"{a} {b}") # Hello World
+
 
 # Variables rules:
 # 1. snake_case
@@ -63,3 +83,20 @@ print(type("""Hello"""))
 # 5. Don't overwrite keywords
 # 6. Don't overwrite built-in functions (dunder)
 # 7. Constants are in uppercase
+# 8. Variables are in lowercase
+# 9. Variables are mutable
+# 10. Constants are immutable
+# 11. Variables are dynamic
+# 12. Constants are static
+# 13. Variables are local
+# 14. Constants are global
+
+# Boolean:
+print("\nBoolean:")
+print(True)
+print(False)
+
+# None:
+print("\nNone:")
+print(None)
+print(type(None))
