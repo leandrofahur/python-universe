@@ -56,3 +56,11 @@ print(type("Hello"))
 print(type('Hello'))
 print(type("""Hello"""))
 
+# Variables rules:
+# 1. snake_case
+# 2. Start with lowercase or underscore
+# 3. Can only contain letters, numbers, and underscores
+# 4. Case sensitive
+# 5. Don't overwrite keywords
+
+
