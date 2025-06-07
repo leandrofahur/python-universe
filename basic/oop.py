@@ -4,17 +4,17 @@ class PlayerCharacter:
 
     def __init__(self, name, age):
         if self.membership and age > 18:
-            self.name = name
-            self.age = age
+            self._name = name
+            self._age = age
         else:
-            self.name = 'Guest' # instance attribute
-            self.age = None
+            self._name = 'Guest' # instance attribute
+            self._age = None
         
     def getName(self):
-        return self.name    
+        return self._name    
     
     def getAge(self):
-        return self.age
+        return self._age
     
     @classmethod
     def adding_things(cls, num1, num2):
