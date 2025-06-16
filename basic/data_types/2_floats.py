@@ -1,0 +1,8 @@
+print("Floats:")
+print(type(2.0 + 4.0))
+print(type(2.0 - 4.0))
+print(type(2.0 * 4.0))
+print(type(2.0 / 4.0))
+print(type(2.0 // 4.0))
+print(type(2.0 % 4.0))
+print(type(2.0 ** 4.0))
