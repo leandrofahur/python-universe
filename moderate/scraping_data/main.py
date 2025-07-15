@@ -2,6 +2,9 @@ import requests
 from bs4 import BeautifulSoup
 from pprint import pprint
 
+def sort_stories_by_votes(hnlist):
+    return sorted(hnlist, key=lambda k:k["points"], reverse=True)
+
 
 def create_custom_hn(links, subtext):
     hn = []
@@ -27,7 +30,7 @@ def create_custom_hn(links, subtext):
             # print(subtext[index])
             # print("\n")
 
-    return hn
+    return sort_stories_by_votes(hn)
 
 
 def main():
