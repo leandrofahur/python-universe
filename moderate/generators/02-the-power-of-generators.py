@@ -22,7 +22,7 @@ def long_time(num):
         i*5
         yield i
 
-# This is a long time function using a list
+# This is a long time function using a list with a generator
 @performance
 def long_time2(num):
     result = []
