@@ -1,6 +1,12 @@
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+from bokeh.plotting import figure, show
+from bokeh.models import HoverTool
+import seaborn as sns
+
+
+sns.set()
 
 
 # Convert 'K' and 'M'
@@ -30,14 +36,29 @@ def main():
     df1['Value'] = df1['Value'].str.replace('€', '').str.replace(',', '')
     df1['Value'] = df1['Value'].apply(convert_wage_string)
     df1['Difference'] = df1['Value'] - df1['Wage']
-    print(df1.head().sort_values('Difference', ascending=False))    
+    # print(df1.head().sort_values('Difference', ascending=False))    
 
     # Create a scatter plot
-    plt.scatter(df1['Wage'], df1['Value'])
-    plt.xlabel('Wage')
-    plt.ylabel('Value')
-    plt.title('Wage vs Value')
-    plt.show()
+    # plt.scatter(df1['Wage'], df1['Value'])
+    # plt.xlabel('Wage')
+    # plt.ylabel('Value')
+    # plt.title('Wage vs Value')
+    # plt.show()
+
+    # sns.scatterplot(x='Wage', y='Value', data=df1)
+    # plt.show()
+
+    TOOLTIPS = [
+        ("x", "@Wage"),
+        ("y", "@Value"),
+        ("Name", "@Name"),
+        ("Difference", "@Difference")
+    ]
+    
+    p = figure(width=800, height=800, title="Wage vs Value", x_axis_label='Wage', y_axis_label='Value', tooltips=TOOLTIPS)    
+    p.scatter(x='Wage', y='Value', size=10, source=df1)
+    show(p)
+
 
 if __name__ == "__main__":
     main()

@@ -192,3 +192,9 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
+
+.DS_Store
+advanced/.DS_Store
+advanced/machine-learning/main.html
+basic/.DS_Store
+basic/object_oriented_programming/4_static_vs_class_methods.py
